@@ -1,0 +1,7 @@
+// Write mixins here.
+
+@mixin displayFlexSetter($justify, $align){
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+}

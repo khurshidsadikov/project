@@ -1,0 +1,96 @@
+.footer{
+    background-color: #2D314D;
+    padding-top: 48px;
+    padding-bottom: 40px;
+    @include displayFlexSetter(space-between, flex-start);
+
+    &__social{
+        
+    }
+    .social{
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        
+        &__logo{
+            display: flex;
+            &__image{
+                display: flex;
+            }
+        }
+
+        &__links{
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            margin-top: 50px;
+            
+            &__item{
+
+                margin: auto;
+                color: white;
+                &:active{
+                    color:#30C88F ;
+                }
+            }
+        }
+    }
+
+    .navlinks{
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        list-style: none; 
+        
+        &__item{
+            margin: 7px 0;
+            display: flex;
+            &__link{
+                color: #ffffff;
+                text-decoration: none;
+                &:active{
+                    color: #30C88F;
+                }
+            }
+        }
+    }
+
+    &__info{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        &__copyright{
+            margin-top: 20px;
+            font-size: 15px;
+            line-height: 26px;
+            /* identical to box height, or 173% */
+            text-align: right;
+            letter-spacing: -0.234375px;
+            color: #FFFFFF;
+            mix-blend-mode: normal;
+            opacity: 0.5;
+        }
+    }
+}
+
+@media screen and (max-width: 904px) {
+    .footer{
+        flex-direction: column;
+        align-items: center;
+        .social{
+            margin-bottom: 20px;
+            &__links{
+                margin-top: 20px;
+            }
+        }
+        .navlinks{
+            align-items: center;
+        }
+        &__info{
+            margin-top: 20px;
+            align-items: center;
+        }
+    }
+}
